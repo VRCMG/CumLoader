@@ -80,7 +80,7 @@ namespace CumLoader.Installer
             try
             {
                 string version = null;
-                JsonArray data = (JsonArray)JsonValue.Parse(webClient.DownloadString("https://api.github.com/repos/HerpDerpinstine/CumLoader/releases")).AsJsonArray;
+                JsonArray data = (JsonArray)JsonValue.Parse(webClient.DownloadString("https://api.github.com/repos/Goatxz/CumLoader/releases")).AsJsonArray;
                 if (data.Count > 0)
                 {
                     foreach (var x in data)
@@ -127,7 +127,7 @@ namespace CumLoader.Installer
                 bool should_add_manual = File.Exists(ManualZipPath);
                 if (should_add_manual)
                     mainForm.cbVersions.Items.Add("Manual Zip");
-                JsonArray data = (JsonArray)JsonValue.Parse(webClient.DownloadString("https://api.github.com/repos/HerpDerpinstine/CumLoader/releases")).AsJsonArray;
+                JsonArray data = (JsonArray)JsonValue.Parse(webClient.DownloadString("https://api.github.com/repos/Goatxz/CumLoader/releases")).AsJsonArray;
                 if (data.Count > 0)
                 {
                     bool has_added_latest = false;
@@ -195,7 +195,7 @@ namespace CumLoader.Installer
         private static void Install_Silent(string dirpath, string selectedVersion)
         {
             string tempfilepath = TempFileCache.CreateFile();
-            webClient.DownloadFileAsync(new Uri("https://github.com/HerpDerpinstine/CumLoader/releases/download/" + selectedVersion + "/CumLoader.zip"), tempfilepath);
+            webClient.DownloadFileAsync(new Uri("https://github.com/Goatxz/CumLoader/releases/download/" + selectedVersion + "/CumLoader.zip"), tempfilepath);
             while (webClient.IsBusy) { }
             Cleanup(dirpath);
             ExtractZip(dirpath, tempfilepath);
@@ -285,7 +285,7 @@ namespace CumLoader.Installer
         {
             SetDisplayText("Downloading CumLoader...");
             string tempfilepath = TempFileCache.CreateFile();
-            webClient.DownloadFileAsync(new Uri("https://github.com/HerpDerpinstine/CumLoader/releases/download/" + selectedVersion + "/CumLoader.zip"), tempfilepath);
+            webClient.DownloadFileAsync(new Uri("https://github.com/Goatxz/CumLoader/releases/download/" + selectedVersion + "/CumLoader.zip"), tempfilepath);
             while (webClient.IsBusy) { }
             SetDisplayText("Extracting CumLoader...");
             Cleanup(dirpath);
@@ -298,7 +298,7 @@ namespace CumLoader.Installer
             SetDisplayText("Downloading CumLoader...");
             bool is_02 = selectedVersion.Equals("v0.2");
             string tempfilepath = TempFileCache.CreateFile();
-            webClient.DownloadFileAsync(new Uri("https://github.com/HerpDerpinstine/CumLoader/releases/download/" + selectedVersion + "/CumLoader" + (is_02 ? "_" : ".") + (File.Exists(Path.Combine(dirpath, "GameAssembly.dll")) ? "Il2Cpp" : "Mono") + ".zip"), tempfilepath);
+            webClient.DownloadFileAsync(new Uri("https://github.com/Goatxz/CumLoader/releases/download/" + selectedVersion + "/CumLoader" + (is_02 ? "_" : ".") + (File.Exists(Path.Combine(dirpath, "GameAssembly.dll")) ? "Il2Cpp" : "Mono") + ".zip"), tempfilepath);
             while (webClient.IsBusy) { }
             SetDisplayText("Extracting CumLoader...");
             Cleanup(dirpath);
@@ -324,11 +324,11 @@ namespace CumLoader.Installer
                 SetDisplayText("Downloading Dependencies...");
                 string tempfilepath4 = TempFileCache.CreateFile();
                 bool run_fallback = false;
-                try { webClient.DownloadFileAsync(new Uri("https://github.com/HerpDerpinstine/CumLoader/raw/master/BaseLibs/UnityDependencies/" + mainForm.UnityVersion + ".zip"), tempfilepath4); while (webClient.IsBusy) { } } catch (Exception ex) { run_fallback = true; }
+                try { webClient.DownloadFileAsync(new Uri("https://github.com/Goatxz/CumLoader/raw/master/BaseLibs/UnityDependencies/" + mainForm.UnityVersion + ".zip"), tempfilepath4); while (webClient.IsBusy) { } } catch (Exception ex) { run_fallback = true; }
                 if (run_fallback)
                 {
                     string subver = mainForm.UnityVersion.Substring(0, mainForm.UnityVersion.LastIndexOf("."));
-                    JsonArray data = (JsonArray)JsonValue.Parse(Program.webClient.DownloadString("https://api.github.com/repos/HerpDerpinstine/CumLoader/contents/BaseLibs/UnityDependencies")).AsJsonArray;
+                    JsonArray data = (JsonArray)JsonValue.Parse(Program.webClient.DownloadString("https://api.github.com/repos/Goatxz/CumLoader/contents/BaseLibs/UnityDependencies")).AsJsonArray;
                     if (data.Count > 0)
                     {
                         List<string> versionlist = new List<string>();
@@ -342,7 +342,7 @@ namespace CumLoader.Installer
                         {
                             versionlist = versionlist.OrderBy(x => int.Parse(x.Split(new char[] { '.' })[2])).ToList();
                             string latest_version = versionlist.Last();
-                            webClient.DownloadFileAsync(new Uri("https://github.com/HerpDerpinstine/CumLoader/raw/master/BaseLibs/UnityDependencies/" + latest_version + ".zip"), tempfilepath4);
+                            webClient.DownloadFileAsync(new Uri("https://github.com/Goatxz/CumLoader/raw/master/BaseLibs/UnityDependencies/" + latest_version + ".zip"), tempfilepath4);
                             while (webClient.IsBusy) { }
                         }
                     }
@@ -365,12 +365,12 @@ namespace CumLoader.Installer
         {
             SetDisplayText("Downloading CumLoader...");
             string tempfilepath = TempFileCache.CreateFile();
-            webClient.DownloadFileAsync(new Uri("https://github.com/HerpDerpinstine/CumLoader/releases/download/v0.1.0/CumLoader.zip"), tempfilepath);
+            webClient.DownloadFileAsync(new Uri("https://github.com/Goatxz/CumLoader/releases/download/v0.1.0/CumLoader.zip"), tempfilepath);
             while (webClient.IsBusy) { }
 
             SetDisplayText("Downloading Dependencies...");
             string tempfilepath2 = TempFileCache.CreateFile();
-            webClient.DownloadFileAsync(new Uri("https://github.com/HerpDerpinstine/CumLoader/releases/download/v0.1.0/MonoDependencies.zip"), tempfilepath2);
+            webClient.DownloadFileAsync(new Uri("https://github.com/Goatxz/CumLoader/releases/download/v0.1.0/MonoDependencies.zip"), tempfilepath2);
             while (webClient.IsBusy) { }
 
             SetDisplayText("Extracting CumLoader...");
@@ -439,7 +439,7 @@ namespace CumLoader.Installer
                 return;
             try
             {
-                string response = webClient.DownloadString("https://github.com/HerpDerpinstine/CumLoader/raw/master/CumLoader.Installer/CumLoader.Installer.csproj");
+                string response = webClient.DownloadString("https://github.com/Goatxz/CumLoader/raw/master/CumLoader.Installer/CumLoader.Installer.csproj");
                 if (string.IsNullOrEmpty(response))
                     return;
                 string response_p1 = response.Substring(response.IndexOf("<Version>") + 9);
@@ -449,7 +449,7 @@ namespace CumLoader.Installer
                     string tempfilepath = (Directory.GetCurrentDirectory() + "\\" + ExeName + ".tmp.exe");
                     if (File.Exists(tempfilepath))
                         File.Delete(tempfilepath);
-                    webClient.DownloadFileAsync(new Uri("https://github.com/HerpDerpinstine/CumLoader/releases/latest/download/CumLoader.Installer.exe"), tempfilepath);
+                    webClient.DownloadFileAsync(new Uri("https://github.com/Goatxz/CumLoader/releases/latest/download/CumLoader.Installer.exe"), tempfilepath);
                     while (webClient.IsBusy) { }
                     Process.Start(tempfilepath);
                     Application.Exit();

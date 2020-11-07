@@ -19,7 +19,7 @@
 ### AUTOMATED INSTALLATION:
 
 1. Make sure the Game you are installing to is Closed and Not Running.
-2. Download [CumLoader.Installer.exe](https://github.com/HerpDerpinstine/CumLoader/releases/latest/download/CumLoader.Installer.exe).
+2. Download [CumLoader.Installer.exe](https://github.com/Goatxz/CumLoader/releases/latest/download/CumLoader.Installer.exe).
 3. Run CumLoader.Installer.exe.
 4. Click the SELECT button.
 5. Select and Open the Game's EXE in your Game's Installation Folder.
@@ -31,7 +31,7 @@
 ### MANUAL INSTALLATION:
 
 1. Make sure the Game you are installing CumLoader to is Closed and Not Running.
-2. Download [CumLoader.zip](https://github.com/HerpDerpinstine/CumLoader/releases/latest/download/CumLoader.zip).
+2. Download [CumLoader.zip](https://github.com/Goatxz/CumLoader/releases/latest/download/CumLoader.zip).
 3. Extract the CumLoader folder from CumLoader.zip to the Game's Installation Folder.
 4. Extract version.dll from CumLoader.zip to the Game's Installation Folder.
 
@@ -40,7 +40,7 @@
 ### AUTOMATED UNINSTALL:
 
 1. Make sure the Game you are uninstalling from is Closed and Not Running.
-2. Download [CumLoader.Installer.exe](https://github.com/HerpDerpinstine/CumLoader/releases/latest/download/CumLoader.Installer.exe).
+2. Download [CumLoader.Installer.exe](https://github.com/Goatxz/CumLoader/releases/latest/download/CumLoader.Installer.exe).
 3. Run CumLoader.Installer.exe.
 4. Click the SELECT button.
 5. Select and Open the Game's EXE in your Game's Installation Folder.
@@ -96,16 +96,16 @@
 
 ### LICENSING & CREDITS:
 
-CumLoader is licensed under the Apache License, Version 2.0. See [LICENSE](https://github.com/HerpDerpinstine/CumLoader/blob/master/LICENSE.md) for the full License.
+CumLoader is licensed under the Apache License, Version 2.0. See [LICENSE](https://github.com/Goatxz/CumLoader/blob/master/LICENSE.md) for the full License.
 
 Third-party libraries used as source code or bundled in binary form:
-- [Research Detours Package](https://github.com/microsoft/Detours) is licensed under the MIT License. See [LICENSE](https://github.com/HerpDerpinstine/CumLoader/blob/master/Detours/LICENSE.md) for the full License.
+- [Research Detours Package](https://github.com/microsoft/Detours) is licensed under the MIT License. See [LICENSE](https://github.com/Goatxz/CumLoader/blob/master/Detours/LICENSE.md) for the full License.
 - [Mono](https://github.com/Unity-Technologies/mono) is licensed under multiple licenses. See [LICENSE](https://github.com/Unity-Technologies/mono/blob/unity-master/LICENSE) for full details.
-- [Harmony](https://github.com/pardeike/Harmony) is licensed under the MIT License. See [LICENSE](https://github.com/HerpDerpinstine/CumLoader/blob/master/CumLoader.ModHandler/Harmony/LICENSE) for the full License.
-- [TinyJSON](https://github.com/pbhogan/TinyJSON) is licensed under the MIT License. See [LICENSE](https://github.com/HerpDerpinstine/CumLoader/blob/master/CumLoader.AssemblyGenerator/TinyJSON/LICENSE.md) for the full License.
-- [LightJson](https://github.com/MarcosLopezC/LightJson) is licensed under the MIT License. See [LICENSE](https://github.com/HerpDerpinstine/CumLoader/blob/master/CumLoader.Installer/LightJson/LICENSE.txt) for the full License.
-- [Tomlyn](https://github.com/xoofx/Tomlyn) is licensed under the MIT License. See [LICENSE](https://github.com/HerpDerpinstine/CumLoader/blob/master/CumLoader.ModHandler/Tomlyn/license.txt) for the full License.
-- [SharpZipLib](https://github.com/icsharpcode/SharpZipLib) is licensed under the MIT License. See [LICENSE](https://github.com/HerpDerpinstine/CumLoader/blob/master/CumLoader.ModHandler/SharpZipLib/LICENSE.txt) for the full License.
+- [Harmony](https://github.com/pardeike/Harmony) is licensed under the MIT License. See [LICENSE](https://github.com/Goatxz/CumLoader/blob/master/CumLoader.ModHandler/Harmony/LICENSE) for the full License.
+- [TinyJSON](https://github.com/pbhogan/TinyJSON) is licensed under the MIT License. See [LICENSE](https://github.com/Goatxz/CumLoader/blob/master/CumLoader.AssemblyGenerator/TinyJSON/LICENSE.md) for the full License.
+- [LightJson](https://github.com/MarcosLopezC/LightJson) is licensed under the MIT License. See [LICENSE](https://github.com/Goatxz/CumLoader/blob/master/CumLoader.Installer/LightJson/LICENSE.txt) for the full License.
+- [Tomlyn](https://github.com/xoofx/Tomlyn) is licensed under the MIT License. See [LICENSE](https://github.com/Goatxz/CumLoader/blob/master/CumLoader.ModHandler/Tomlyn/license.txt) for the full License.
+- [SharpZipLib](https://github.com/icsharpcode/SharpZipLib) is licensed under the MIT License. See [LICENSE](https://github.com/Goatxz/CumLoader/blob/master/CumLoader.ModHandler/SharpZipLib/LICENSE.txt) for the full License.
 - [AtiRoNya](https://github.com/AtiLion/AtiRoNya) is licensed under the MIT License. See [LICENSE](https://github.com/AtiLion/AtiRoNya/blob/e20e4a8fc47b37834c8284f9e6e937f04a84c510/LICENSE) for the full License.
 - Unity Runtime libraries (found in [Unity Dependencies](BaseLibs/Unity%20Dependencies)) are part of Unity Software.  
 Their usage is subject to [Unity Terms of Service](https://unity3d.com/legal/terms-of-service), including [Unity Software Additional Terms](https://unity3d.com/legal/terms-of-service/software).
